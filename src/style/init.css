@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Yesteryear&display=swap');
+@import "./cssWarp-styles.css";
 
 *,::after,::before{
     margin: 0px;
@@ -25,6 +26,13 @@ h1,section p{
   color: white;
   font-size: 30px;
 }
+#fin{
+  color: #008C45;
+}
+#en{
+
+  color: #CD212A;
+}
 a{
   color: white;
 }
@@ -35,7 +43,6 @@ body{
     background-size: cover;
     font-family: 'Roboto', sans-serif;
     height: 100dvh;
-  
     display: flex;
     flex-direction: column;
 }
@@ -120,7 +127,7 @@ ul li:hover::after {
   width: 180px;
   height: 130px;
   border-radius: 50%;
-  background-color: #003566;
+  background-color: #008C45;
   top: 100%;
   left: 0;
   transition: 500ms ease;
@@ -135,6 +142,17 @@ ul li:hover::after {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.flou{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #333333;
+  opacity: .6;
+  z-index: -1;
 }
 
 
