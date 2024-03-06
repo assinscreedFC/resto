@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Yesteryear&display=swap');
 @import "./cssWarp-styles.css";
 
+
 *,::after,::before{
     margin: 0px;
     padding: 0px;
@@ -12,27 +13,7 @@
     font-family: "Montserrat";
 }
 
-section{
-    margin: 0 auto;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-}
-h1,section p{
-  font-family: "Montserrat";
-  color: white;
-  font-size: 30px;
-}
-#fin{
-  color: #008C45;
-}
-#en{
 
-  color: #CD212A;
-}
 a{
   color: white;
 }
@@ -105,51 +86,13 @@ ul li:hover::after {
   background-color: white;
 }
 
-.button {
-  width: 180px;
-  height: 50px;
-  border-radius: 50px;
-  background-color: transparent;
-  border: 2px solid grey;
-  overflow: hidden;
-  position: relative;
-  font-size: 16px;
-  font-weight: 500;
-  text-transform: uppercase;
-  transition: 300ms ease;
-  color: aliceblue;
-}
-
-.button::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  width: 180px;
-  height: 130px;
-  border-radius: 50%;
-  background-color: #008C45;
-  top: 100%;
-  left: 0;
-  transition: 500ms ease;
-}
-
-.button:hover {
-  color: #fff;
-  letter-spacing: 3px;
-}
-
-.button:hover::before {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
 .flou{
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height:100vh;
   background-color: #333333;
   opacity: .6;
   z-index: -1;
@@ -165,7 +108,8 @@ ul li:hover::after {
 
 .footer {
     /* flex-grow: 1; */
-    position: absolute;
+    position: fixed;
+    float: right;
     bottom: 0;
     width: 100%;
     display: flex;
@@ -192,3 +136,102 @@ ul li:hover::after {
       transform: rotate(360deg) scale(1.2);
       color: whitesmoke;
     }
+
+    
+body {
+  --sb-track-color: #ffffff;
+  --sb-thumb-color: #000000;
+  --sb-size: 8px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 6px;
+  
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+}
+
+
+    
+    
+
+@media screen and (max-width: 1000px) {
+  header{
+    justify-content: space-between;
+    width: 98%;
+  }
+  
+}
+@media screen and (max-width: 500px) {
+  /* Sidenav menu */
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -250px;
+  background-color: #e8e8e8;
+  padding-top: 60px;
+  transition: left 0.5s ease;
+}
+
+/* Sidenav menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #111;
+}
+
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Active class */
+.sidenav.active {
+  left: 0;
+}
+
+/* Close btn */
+.sidenav .close {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+/* Icône burger */
+.burger-icon span {
+  display: block;
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+  
+}
