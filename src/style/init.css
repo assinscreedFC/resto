@@ -26,6 +26,7 @@ body{
     height: 100dvh;
     display: flex;
     flex-direction: column;
+   
 }
 img{
   width: 100px;
@@ -38,7 +39,7 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 80vw;
     height: 80px;
     background-color: transparent;
     align-content: center;
@@ -88,14 +89,86 @@ ul li:hover::after {
 
 
 .flou{
+ 
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
-  height:100vh;
+  height:98vh;
   background-color: #333333;
   opacity: .6;
   z-index: -1;
+}
+
+
+.loader {
+  font-family: "Montserrat";
+  z-index: 11111;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+.lettre {
+  font-family: "Montserrat";
+  color: #484848;
+  font-size: 80px;
+  letter-spacing: 15px;
+  margin-bottom: 150px;
+  animation: flash 1.2s linear infinite;
+}
+@keyframes flash {
+  0% {
+      color: #fff900;
+      text-shadow: 0 0 7px #fff900;
+  }
+  90% {
+      color: #484848;
+      text-shadow: none;
+  }
+  100% {
+      color: #fff900;
+      text-shadow: 0 0 7px #fff900;
+  }
+}
+
+.lettre:nth-child(1){
+  animation-delay: 0.1s;
+}
+.lettre:nth-child(2){
+  animation-delay: 0.2s;
+}
+.lettre:nth-child(3){
+  animation-delay: 0.3s;
+}
+.lettre:nth-child(4){
+  animation-delay: 0.4s;
+}
+.lettre:nth-child(5){
+  animation-delay: 0.5s;
+}
+.lettre:nth-child(6){
+  animation-delay: 0.6s;
+}
+.lettre:nth-child(7){
+  animation-delay: 0.7s;
+}
+.lettre:nth-child(8){
+  animation-delay: 0.8s;
+}
+.lettre:nth-child(9){
+  animation-delay: 0.9s;
+}
+.lettre:nth-child(10){
+  animation-delay: 1s;
+}
+
+.fondu-out {
+  opacity: 0;
+  transition: opacity 0.4s ease-out;
 }
 
 
@@ -107,10 +180,10 @@ ul li:hover::after {
 
 
 .footer {
-    /* flex-grow: 1; */
+    flex-grow: 1;
     position: fixed;
-    float: right;
     bottom: 0;
+    
     width: 100%;
     display: flex;
     align-items: flex-end;
@@ -136,6 +209,65 @@ ul li:hover::after {
       transform: rotate(360deg) scale(1.2);
       color: whitesmoke;
     }
+
+    .checkboxtoggler {
+     
+      width: 3em;
+      display: flex;
+      flex-direction: column;
+      gap: 0.7em;
+      cursor: pointer;
+    }
+    
+    .line-1 {
+      background: #df6447;
+      height: 0.3em;
+      border-radius: 10em;
+      transition-duration: 500ms;
+    }
+    
+    .line-2 {
+      background: #df6447;
+      height: 0.3em;
+      border-radius: 10em;
+      transition-duration: 500ms;
+    }
+    
+    .line-3 {
+      background: #df6447;
+      height: 0.3em;
+      border-radius: 10em;
+      transition-duration: 500ms;
+    }
+    
+    #toggleChecker {
+      height: 3em;
+      width: 100%;
+      display: none;
+    }
+    
+    
+    #toggleChecker:checked + #togglerLable .checkboxtoggler .line-1 {
+      -webkit-transform: rotate(45deg) translateY(0.7em) translateX(0.7em);
+      -ms-transform: rotate(45deg) translateY(0.7em) translateX(0.7em);
+      transform: rotate(45deg) translateY(0.7em) translateX(0.7em);
+    }
+    
+    #toggleChecker:checked + #togglerLable .checkboxtoggler .line-2 {
+      -webkit-transform: rotate(-45deg) translateY(0em) translateX(0.1em);
+      -ms-transform: rotate(-45deg) translateY(0em) translateX(0.1em);
+      transform: rotate(-45deg) translateY(0em) translateX(0.1em);
+    }
+    
+    #toggleChecker:checked + #togglerLable .checkboxtoggler .line-3 {
+      transform: scaleX(0);
+      transform-origin: left;
+    }
+.checkboxtoggler,#toggleChecker{
+z-index: 1111;
+}
+
+
 
     
 body {
@@ -166,7 +298,10 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-
+.active{
+  margin-top: 0%;
+  transition: all 0.5s ease-out; 
+}
     
     
 
@@ -177,61 +312,49 @@ body::-webkit-scrollbar-thumb {
   }
   
 }
-@media screen and (max-width: 500px) {
-  /* Sidenav menu */
-.sidenav {
-  height: 100%;
-  width: 250px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: -250px;
-  background-color: #e8e8e8;
-  padding-top: 60px;
-  transition: left 0.5s ease;
-}
 
-/* Sidenav menu links */
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
+@media screen and (max-width: 550px) {
 
-.sidenav a:hover {
-  color: #111;
-}
+  .checkboxtoggler{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
 
-.sidenav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
+  nav{
+    margin-top: -110%;
+    z-index: 111;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(5px);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    transition: all 0.5s ease-out; 
+  }
+  
+  ul{
+    display: flex;
+    flex-direction: column;
 
-/* Active class */
-.sidenav.active {
-  left: 0;
-}
-
-/* Close btn */
-.sidenav .close {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-}
-
-/* Icône burger */
-.burger-icon span {
-  display: block;
-  width: 35px;
-  height: 5px;
-  background-color: black;
-  margin: 6px 0;
+  }
+  
+  .footer{
+    font-size: 0.9rem;
+  }
+  .fa-github{
+    font-size: 1.2rem;
+  }
+  
+  /* header{
+    z-index: 111;
+    position:fixed;
+    top: 0;
+  } */
 }
 
   
-}
