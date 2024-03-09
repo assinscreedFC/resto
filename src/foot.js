@@ -97,6 +97,8 @@ assinscreedFC
     check.addEventListener("change", function () {
       console.log(check.checked);
       const nav = document.querySelector("nav");
+      const box = document.querySelector(".checkboxtoggler");
+      box.classList.add("active");
 
       nav.classList.toggle("active");
     });

@@ -6,8 +6,9 @@ section{
     border-bottom:3px solid #c59d5f;
     border-top:3px solid #c59d5f;
     margin: 20px auto;
+    margin-bottom: 0px !important;
     width: 100vw;
-    height: 69vh;
+    height:auto;
     overflow: hidden;
     overflow-y: scroll;
     background-color: #f2f2f2;

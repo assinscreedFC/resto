@@ -181,8 +181,7 @@ ul li:hover::after {
 
 .footer {
     flex-grow: 1;
-    position: fixed;
-    bottom: 0;
+    
     
     width: 100%;
     display: flex;
@@ -220,21 +219,21 @@ ul li:hover::after {
     }
     
     .line-1 {
-      background: #df6447;
+      background: #008C45;
       height: 0.3em;
       border-radius: 10em;
       transition-duration: 500ms;
     }
     
     .line-2 {
-      background: #df6447;
+      background: #F4F9FF;
       height: 0.3em;
       border-radius: 10em;
       transition-duration: 500ms;
     }
     
     .line-3 {
-      background: #df6447;
+      background: #CD212A;
       height: 0.3em;
       border-radius: 10em;
       transition-duration: 500ms;
@@ -248,12 +247,16 @@ ul li:hover::after {
     
     
     #toggleChecker:checked + #togglerLable .checkboxtoggler .line-1 {
+      background-color: #CD212A;
+      
       -webkit-transform: rotate(45deg) translateY(0.7em) translateX(0.7em);
       -ms-transform: rotate(45deg) translateY(0.7em) translateX(0.7em);
       transform: rotate(45deg) translateY(0.7em) translateX(0.7em);
     }
     
     #toggleChecker:checked + #togglerLable .checkboxtoggler .line-2 {
+      background-color: #CD212A;
+
       -webkit-transform: rotate(-45deg) translateY(0em) translateX(0.1em);
       -ms-transform: rotate(-45deg) translateY(0em) translateX(0.1em);
       transform: rotate(-45deg) translateY(0em) translateX(0.1em);
@@ -298,9 +301,14 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-.active{
+nav.active{
   margin-top: 0%;
   transition: all 0.5s ease-out; 
+}
+.checkboxtoggler.active{
+  position: fixed;
+    top: 30px;
+    right: 30px;
 }
     
     
@@ -316,13 +324,13 @@ body::-webkit-scrollbar-thumb {
 @media screen and (max-width: 550px) {
 
   .checkboxtoggler{
-    position: absolute;
+    position:absolute;
     top: 30px;
     right: 30px;
   }
 
   nav{
-    margin-top: -110%;
+    margin-top: -150%;
     z-index: 111;
     position: fixed;
     background-color: rgba(255, 255, 255, 0.20);
