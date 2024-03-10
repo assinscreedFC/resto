@@ -9,6 +9,7 @@ lerna-debug.log*
 
 node_modules
 rangement
+dist
 dist-ssr
 *.local
 
