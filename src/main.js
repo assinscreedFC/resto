@@ -1,8 +1,8 @@
 import confetti from "canvas-confetti";
-import "./style/init.css";
+import "../public/style/init.css";
 import "./foot";
 import "https://kit.fontawesome.com/4c536a6bd5.js";
-import "./style/index.css";
+import "../public/style/index.css";
 
 // var sidenav = document.getElementById("mySidenav");
 // var openBtn = document.getElementById("openBtn");
