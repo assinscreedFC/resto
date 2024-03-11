@@ -1,5 +1,5 @@
 import confetti from "canvas-confetti";
-import "./publicsrc/style/init.css";
+import "./public/src/style/init.css";
 import "./src/foot";
 import "https://kit.fontawesome.com/4c536a6bd5.js";
 import "./public/src/style/index.css";
