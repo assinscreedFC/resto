@@ -2,7 +2,7 @@ import confetti from "canvas-confetti";
 import "./style/init.css";
 import "./foot";
 import "https://kit.fontawesome.com/4c536a6bd5.js";
-import "./style/index.css"
+import "./style/index.css";
 
 // var sidenav = document.getElementById("mySidenav");
 // var openBtn = document.getElementById("openBtn");
@@ -21,14 +21,9 @@ import "./style/index.css"
 //   sidenav.classList.remove("active");
 // }
 
-
-
-
-
-
-const btn=document.querySelector(".button");
-btn.addEventListener("click",()=>{
-    window.location.href="../public/menu.html"
+const btn = document.querySelector(".button");
+btn.addEventListener("click", () => {
+  window.location.href = "./menu.html";
 });
 // import './page/anis.svg'
 confetti();
