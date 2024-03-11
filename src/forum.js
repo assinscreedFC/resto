@@ -1,5 +1,5 @@
-import "../public/style/init.css";
-import "../public/style/forum.css";
+import "./style/init.css";
+import "./style/forum.css";
 import confetti from "canvas-confetti";
 
 import "./foot";
