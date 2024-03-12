@@ -1,4 +1,4 @@
-import "./style/init.css";
+import "./style/style.css";
 import "./style/forum.css";
 import confetti from "canvas-confetti";
 
