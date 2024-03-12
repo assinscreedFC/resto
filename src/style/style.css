@@ -20,7 +20,7 @@ a{
 
 body{
 
-    /* background: url(../../1132145-diaporama.jpg) no-repeat fixed 50% 50%; */
+    background: url(../../rangement/1132145-diaporama.jpg) no-repeat fixed 50% 50%;
     background-size: cover;
     font-family: 'Roboto', sans-serif;
     height: 100dvh;
@@ -358,11 +358,7 @@ nav.active{
     font-size: 1.2rem;
   }
   
-  /* header{
-    z-index: 111;
-    position:fixed;
-    top: 0;
-  } */
+ 
 }
 
   
