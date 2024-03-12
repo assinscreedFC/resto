@@ -20,9 +20,9 @@ a{
 
 body{
 
-    background: url(../../1132145-diaporama.jpg) no-repeat fixed 50% 50%;
+    background: url(../../public/1132145-diaporama.jpg) no-repeat fixed 50% 50%;
     background-size: cover;
-    height: 100dvh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
    
@@ -187,7 +187,7 @@ ul li:hover::after {
     align-items: flex-end;
     justify-content: center;
     background-color: #333333d3;
-    /*margin-top: 30px;*/
+   
     gap: 20px;
     width: 100%;
     padding: 10px;
@@ -329,7 +329,7 @@ nav.active{
   }
 
   nav{
-    margin-top: -150%;
+    margin-top: -200%;
     z-index: 111;
     position: fixed;
     background-color: rgba(255, 255, 255, 0.20);
