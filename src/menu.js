@@ -1,4 +1,4 @@
-import "./style/style.css.css";
+import "./style/style.css";
 import "./style/menu.css";
 import confetti from "canvas-confetti";
 import "./foot";
