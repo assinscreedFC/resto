@@ -20,9 +20,8 @@ a{
 
 body{
 
-    background: url(../../rangement/1132145-diaporama.jpg) no-repeat fixed 50% 50%;
+    background: url(../../1132145-diaporama.jpg) no-repeat fixed 50% 50%;
     background-size: cover;
-    font-family: 'Roboto', sans-serif;
     height: 100dvh;
     display: flex;
     flex-direction: column;
@@ -43,7 +42,7 @@ img{
     height: 80px;
     background-color: transparent;
     align-content: center;
-   margin: 0 auto;
+    margin: 0 auto;
 }
 
 
