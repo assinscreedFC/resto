@@ -20,7 +20,7 @@ a{
 
 body{
 
-    background: url(../../public/1132145-diaporama.jpg) no-repeat fixed 50% 50%;
+    background: url(../../rangement/1132145-diaporama.jpg) no-repeat fixed 50% 50%;
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -29,6 +29,7 @@ body{
 }
 img{
   width: 100px;
+  
   
 }
 
@@ -302,6 +303,7 @@ body::-webkit-scrollbar-thumb {
 
 nav.active{
   margin-top: 0%;
+  height: 100vh;
   transition: all 0.5s ease-out; 
 }
 .checkboxtoggler.active{
@@ -337,7 +339,7 @@ nav.active{
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 0dvh;
     display: flex;
     justify-content: center;
     align-items: center;    
