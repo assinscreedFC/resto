@@ -12,6 +12,9 @@
     list-style: none;
     font-family: "Montserrat";
 }
+footer img {
+  width: 30px;
+}
 
 
 a{
@@ -20,11 +23,12 @@ a{
 
 body{
 
-    background: url(../../photo/1132145-diaporama.jpg) no-repeat fixed 50% 50%;
+    background: url(./photo/1132145-diaporama.jpg) no-repeat fixed 50% 50%;
     background-size: cover;
     height: 100vh;
     display: flex;
     flex-direction: column;
+    gap: 2;
    
 }
 img{
@@ -194,6 +198,12 @@ ul li:hover::after {
     padding: 10px;
     font-size: 20px;
     color: whitesmoke;
+    }
+    .anis{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
     }
     
     .fa-github {

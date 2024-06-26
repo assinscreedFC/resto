@@ -1,14 +1,14 @@
 export default (function () {
   const da = document.write(new Date().getFullYear());
   document.querySelector(".footer").innerHTML = `
-<p>
+<div class="anis"><p>
 Copyright ©
 ${da}
 assinscreedFC
 </p>
 <a href="https://github.com/assinscreedFC" target="_blank">
-<i class="fab fa-github"></i
-></a>`;
+<img src="./github.svg" alt="popo" 
+></a></div>`;
 
   const load = document.createElement("div");
   load.innerHTML = `
@@ -31,15 +31,15 @@ assinscreedFC
 
   window.addEventListener("load", () => {
     load.remove();
-    document.querySelector(".footer").innerHTML = `
+    document.querySelector(".footer").innerHTML = `<div class="anis">
     <p>
     Copyright ©
     ${da}
     assinscreedFC
     </p>
     <a href="https://github.com/assinscreedFC" target="_blank">
-    <i class="fab fa-github"></i
-    ></a>`;
+    <img src="./github.svg" alt="popo"
+    ></a> </div>`;
   });
   const header = document.querySelector("header");
   let one = 0;
